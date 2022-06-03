@@ -1,0 +1,352 @@
+body { 
+    display: grid;
+    grid-template-areas: 
+      "nav nav nav"
+      "header article ads"
+      "footer footer footer";
+    grid-template-rows: 60px 1fr 60px;
+    grid-template-columns: 20% 1fr 15%;
+    grid-gap: 0px;
+    height: 100vh;
+    margin: 0;
+    }
+
+  .cv{
+    grid-area: article;
+    background-color: white;
+  }
+  .super-container {
+  grid-area:article;
+  }
+
+  #pageHeader {
+    color: white;
+    grid-area: header;
+
+    }
+    .textOutline {
+      margin: 0;
+      padding: 10px;
+      background-color: #04AA6D;
+    }
+
+
+  #pageFooter {
+   background-color: #333;
+    grid-area: footer;
+  }
+  #mainArticle { 
+    grid-area: article;   
+    
+  }
+  #mainNav { 
+    grid-area: nav; 
+
+    }
+
+
+  #siteAds { 
+    grid-area: ads; 
+    background: radial-gradient(
+      circle,
+      #81d46f 0%,
+      rgba(41, 45, 62, 1) 100%
+    );
+    }
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 300px;
+        margin: auto;
+        text-align: center;
+        background-color: whitesmoke;
+      }
+      
+      .title {
+        color: grey;
+        font-size: 18px;
+      }
+      
+      button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+      }
+      
+      a {
+        text-decoration: none;
+        font-size: 22px;
+        color: black;
+      }
+      
+      button:hover, a:hover {
+        opacity: 0.7;
+      }    
+
+/*css for carusell*/
+
+
+
+
+.super-container {
+  -webkit-box-align: center !important;
+  -ms-flex-align: center !important;
+  align-items: center !important;
+  -webkit-box-pack: center !important;
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  height: 100%;
+}
+
+.container {
+  grid-area : article;
+  height: 330px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Carousel container */
+.carousel-container {
+  align-content: end;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  
+  max-height: 80vh;
+  
+}
+
+/* Hide the images by default */
+.myCarousel {
+  display: none;
+  height: 100%;
+}
+
+.myCarousel img {
+  width: 100%;
+  margin-top: -20%;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  background: #0000008c;
+  line-height: 30px;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 12px 20px;
+  position: absolute;
+  top: 0;
+  background: #000000ba;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #3f3f3f;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}      
+
+
+/* css for meny */
+.topnav {
+  height: 60px;
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+height: 60px;
+float: left;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+background-color: #ddd;
+color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+background-color: #04AA6D;
+color: white;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+float: right;
+}
+/*
+artsy header
+*/
+.head-Wrapper {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 1fr;
+  max-width: 1440px;
+  font-size: 0;
+}
+
+.hero-item,
+.standard-item {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.news-item {
+  display: inline-block;
+  min-height: 400px;
+  width: 50%;
+}
+
+.hero-item {
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.uLScMff0uvOtNWaEZ0pIZgHaDF%26pid%3DApi&f=1");
+}
+
+.standard-item:nth-child(2) {
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Frevistadigital.inesem.es%2Finformatica-y-tics%2Ffiles%2F2015%2F10%2Finesem-java-1024x768.jpg&f=1&nofb=1");
+}
+
+.standard-item:nth-child(3) {
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpngimg.com%2Fuploads%2Fphp%2Fphp_PNG45.png&f=1&nofb=1");
+}
+
+.standard-item:nth-child(4) {
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fsolocodigoweb.com%2Fwp-content%2Fuploads%2F2014%2F03%2Fcronologia-historia-de-mysql-cloud-computing-solocodigoweb.jpg&f=1&nofb=1");
+}
+
+@supports (display: grid) {
+  .news-item {
+    width: auto;
+    min-height: 0;
+  }
+  
+  .hero-item {
+    grid-column: 1 / span 2;
+    grid-row: 1 / 50;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 75px), 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 75px), 0 100%);
+  }
+
+  .standard-item:nth-child(2) {
+    grid-column: 1 / span 1;
+    grid-row: 50 / 100;
+    -webkit-clip-path: polygon(0 14%, 0 86%, 90% 81%, 100% 6%);
+    clip-path: polygon(0 14%, 0 86%, 90% 81%, 100% 6%);
+    margin-top: -73px;
+  }
+
+  .standard-item:nth-child(3) {
+    grid-column: 2 / span 1;
+    grid-row: 50 / 100;
+    -webkit-clip-path: polygon(13% 6%, 4% 84%, 100% 100%, 100% 0%);
+    clip-path: polygon(13% 6%, 4% 84%, 100% 100%, 100% 0%);
+    margin-top: -73px;
+    margin-left: -15%;
+    margin-bottom: 18px;
+  }
+
+  .standard-item:nth-child(4) {
+    grid-column: 1 / span 2;
+    grid-row: 100 / 150;
+    -webkit-clip-path: polygon(45% 0, 100% 15%, 100% 100%, 0 100%, 0 5%);
+    clip-path: polygon(45% 0, 100% 15%, 100% 100%, 0 100%, 0 5%);
+    margin-top: -107px;
+  }
+}
+
